@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Johannes Norheim</title>
+  <meta name="description" content="Johannes Norheim — Assistant Professor and Chancellor's Fellow in Computational Engineering Design, University of Strathclyde." />
+  <style>
+    :root {
+      --bg: #f8f8f5;
+      --text: #1b1b1b;
+      --muted: #666;
+      --line: #ddd;
+      --line-soft: #e6e6e0;
+      --accent: #1f4f7a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      counter-reset: pub;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 72px 24px;
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: clamp(40px, 7vw, 64px);
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+    .role {
+      margin: 0 0 32px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .bio p {
+      margin: 0 0 18px;
+      font-size: 19px;
+    }
+
+    /* Publications */
+    h2 {
+      margin: 56px 0 4px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    h3 {
+      margin: 28px 0 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    ol.pubs {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ol.pubs li {
+      counter-increment: pub;
+      position: relative;
+      padding: 12px 0 12px 36px;
+      font-size: 14.5px;
+      line-height: 1.55;
+      color: var(--text);
+      border-bottom: 1px solid var(--line-soft);
+    }
+    ol.pubs li::before {
+      content: counter(pub);
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 26px;
+      text-align: right;
+      padding-right: 8px;
+      font-size: 12px;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+    ol.pubs .me { font-weight: 600; }
+    ol.pubs em {
+      font-style: italic;
+      color: #3a3a3a;
+    }
+    ol.pubs .year {
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Footer links */
+    .links {
+      border-top: 1px solid var(--line);
+      margin-top: 48px;
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      font-size: 16px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(31, 79, 122, 0.35);
+    }
+    a:hover { border-bottom-color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Johannes Norheim</h1>
+    <p class="role">Space systems engineering · Digital continuity · AI for complex systems</p>
+
+    <div class="bio">
+      <p>
+        Johannes Norheim is an Assistant Professor and Chancellor's Fellow in Computational Engineering Design in the Department of Design, Manufacturing, and Engineering Management (DMEM) at the University of Strathclyde in Scotland.
+      </p>
+      <p>
+  Before joining Strathclyde, he earned his bachelor's and master's degrees in Aeronautics and Astronautics and his Ph.D. in Engineering Systems at MIT, then worked as a postdoctoral researcher in MIT's Engineering Systems Lab until August 2024.
+    </p>
+      <p>
+        His research focuses on accelerating the development of complex systems by enabling digital continuity across the entire systems engineering lifecycle. In particular, Johannes works at the intersection of design, simulation, optimization, and generative AI methods. His past research work has received funding from the European Space Agency, Airbus and NASA, as well as the UK Engineering & Physical Sciences Research Council.
+      </p>
+    </div>
+
+
+    <div class="links">
+      <a href="https://systems.mit.edu/team/johannes-norheim/">MIT ESL bio</a>
+      <a href="https://github.com/norheim">GitHub</a>
+    </div>
+  </main>
+</body>
+</html>
